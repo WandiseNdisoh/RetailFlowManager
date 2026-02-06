@@ -16,11 +16,11 @@ jobs:
       with:
         dotnet-version: '5.0.x'
 
-    - name: Restore and Build
-      # This finds your .csproj regardless of the folder path
-      run: |
-        dotnet restore **/*.csproj
-        dotnet build **/*.csproj --configuration Release --no-restore
+    - name: Restore
+      run: dotnet restore RetailFlowManager.sln
 
-    - name: Run Tests
-      run: dotnet test **/*.csproj --configuration Release --no-build
+    - name: Build
+      run: dotnet build RetailFlowManager.sln --configuration Release --no-restore
+
+    - name: Test
+      run: dotnet test RetailFlowManager.sln --configuration Release --no-build
