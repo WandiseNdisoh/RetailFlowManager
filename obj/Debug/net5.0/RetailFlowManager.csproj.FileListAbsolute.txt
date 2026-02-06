@@ -26,4 +26,3 @@ C:\Users\Student\source\repos\RetailFlowManager\obj\Debug\net5.0\RetailFlowManag
 C:\Users\Student\source\repos\RetailFlowManager\obj\Debug\net5.0\ref\RetailFlowManager.dll
 C:\Users\Student\source\repos\RetailFlowManager\obj\Debug\net5.0\RetailFlowManager.pdb
 C:\Users\Student\source\repos\RetailFlowManager\obj\Debug\net5.0\RetailFlowManager.genruntimeconfig.cache
-C:\Users\Student\source\repos\RetailFlowManager\obj\Debug\net5.0\RetailFlowManager.csproj.AssemblyReference.cache
