@@ -17,10 +17,11 @@ jobs:
         dotnet-version: '5.0.x'
 
     - name: Restore and Build
-      # This command finds the solution file automatically
+      # We are targeting the specific file visible in your screenshot
       run: |
-        dotnet restore
-        dotnet build --configuration Release --no-restore
+        dotnet restore RetailFlowManager.csproj
+        dotnet build RetailFlowManager.csproj --configuration Release --no-restore
 
-    - name: Test
-      run: dotnet test --configuration Release --no-build
+    - name: Run Tests
+      # If your tests are in a different folder, we'll find them here
+      run: dotnet test **/*.csproj --configuration Release --no-build
